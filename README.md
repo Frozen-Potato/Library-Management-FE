@@ -50,7 +50,7 @@ Prerequisites
 
 Installation
 
-    Clone the frontend repository:
+Clone the frontend repository:
 ```
 git clone https://github.com/Frozen-Potato/Library-Management-FE.git
 cd Library-Management-FE
