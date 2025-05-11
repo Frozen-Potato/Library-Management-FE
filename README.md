@@ -1,53 +1,97 @@
-# Front-end Project for Full-stack
+# 📚 Library Management System – Frontend
 
-![React](https://img.shields.io/badge/React-v.18-blue)
-![Redux toolkit](https://img.shields.io/badge/RTK-v.1-purple)
-![TypeScript](https://img.shields.io/badge/TypeScript-v.4-green)
-![SASS](https://img.shields.io/badge/SASS-v.1-hotpink)
+A responsive and user-friendly React application designed to manage library operations such as book lending, returns, and user management. This frontend interfaces seamlessly with the [Library-Management-BE](https://github.com/Frozen-Potato/Library-Management-BE) backend, providing a full-stack solution for library management.
 
-This project requires implementation of TypeScript and SASS.
+[![Deployed with GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue?logo=github)](https://frozen-potato.github.io/fs16-front-end-lib/)
 
-## Requirement
+👉 **Live Demo**: [https://frozen-potato.github.io/fs16-front-end-lib/](https://frozen-potato.github.io/fs16-front-end-lib/)
 
-1. Use the API endpoint from your backend project to create an e-commerce website.
-2. Create at lease 4 pages (can be more if you want): Page for all products, product page,
-   profile page (only available if user logins), and cart page (cart page could be a page or a modal)
-3. Create Redux store for following features:
-   - product reducer: get all products, find a single products, filter products by
-     categories, sort products by price. Create, update and delete a product (enable update & delete features only for admin of the webapp)
-   - user reducer: register and login
-   - cart reducer: add product to cart, remove products, update products's quantity in cart
-4. When adding routers to your application, programatically set certain routes to be private. For example, route to user profile page should not be accessible if user has not logged in.
-5. Implement unit testing for the reducers
-6. Deploy the application and rewrite README file.
+---
 
-## Bonus
+## 🚀 Features
 
-1. Use context API to switch theme
-2. Use pagination when fetching/displaying all the products
-3. Implement performance optimization where applicable
+- **User Authentication**: Secure login and registration functionalities.
+- **Book Management**: Add, edit, delete, and view books in the library.
+- **User Management**: Manage library members and their borrowing activities.
+- **Responsive Design**: Optimized for various devices and screen sizes.
 
-## Instruction to start the project
+---
 
-In the project directory, you can run:
+## 🛠️ Technologies Used
 
-### `npm install`
+### 📦 Frontend  
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)  
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white)  
+![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
-Install all the dependencies
+### 🔧 Backend ([Library-Management-BE](https://github.com/Frozen-Potato/Library-Management-BE))  
+![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)  
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)  
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)  
+![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white)
 
-### `npm start`
+### ⚙️ CI/CD  
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI--CD-blue?logo=github-actions&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧩 Backend Integration
 
-### `npm test`
+This frontend communicates with the [Library-Management-BE](https://github.com/Frozen-Potato/Library-Management-BE) backend API.
 
-Launches the test runner in the interactive watch mode
 
-### `npm run build`
+## 🧑‍💻 Getting Started with Frontend
+Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Node.js (v14 or above)
+
+    npm or yarn
+
+Installation
+
+    Clone the frontend repository:
+```
+git clone https://github.com/Frozen-Potato/Library-Management-FE.git
+cd Library-Management-FE
+```
+
+Install dependencies:
+
+```
+    npm install
+    # or
+    yarn install
+```
+Configure environment variables:
+Create a .env file and add:
+```
+REACT_APP_API_URL=http://localhost:5000/api/v1
+```
+Run the app:
+```
+    npm start
+    # or
+    yarn start
+```
+    App runs at http://localhost:3000/
+
+## 📁 Project Structure
+
+```
+Library-Management-FE/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.js
+│   └── index.js
+├── .env
+├── package.json
+└── README.md
+```
+
+## 📌 License
+
+This project is licensed under the MIT License.
